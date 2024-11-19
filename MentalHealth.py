@@ -173,7 +173,7 @@ def main_page():
 
         elif option == "Chat Assistance":
             st.subheader("Chat Assistance")
-            guidances.chatbot()
+            #guidances.chatbot()
 
 
 is_logged_in = st.session_state.get("logged_in", False)  
