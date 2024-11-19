@@ -1,6 +1,5 @@
 streamlit
 groq
-sqlite3
 hashlib
 plotly
 tabulate
