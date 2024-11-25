@@ -16,6 +16,7 @@ def show_guidance():
     # Retrieve the data from the database
     conn = db.init_db()
     df = pd.read_sql_query("SELECT * FROM mental_health where user_name='"+st.session_state.get("current_user", None)+"' ORDER BY date DESC", conn)
+    print(pd.read_sql_query("SELECT * FROM users", conn))
 
     # Generate the prompt string
     dataframe_string = tabulate.tabulate(df.head(), headers='keys', tablefmt='pipe', showindex=False)
